@@ -1,0 +1,30 @@
+{% extends 'layouts/bootstrap-base.html.twig' %}
+
+{% block content %}
+    <main class="site-main">
+
+        <!--================ Hero banner start =================-->
+        <section class="hero-banner">
+            <div class="container">
+                <div class="row no-gutters align-items-center pt-60px">
+                    <div class="col-5 d-none d-sm-block">
+                        <div class="hero-banner__img">
+                            <img class="img-fluid" src="img/home/raquette-banner.png" alt="">
+                        </div>
+                    </div>
+                    <div class="col-sm-7 col-lg-6 offset-lg-1 pl-4 pl-md-5 pl-lg-0">
+                        <div class="hero-banner__content">
+                            <h4>PADEAL</h4>
+                            <h1>La plateforme d'annonces référence pour les raquettes de Padel </h1>
+                            <p>À la recherche d'une raquette à un prix avantageux ? Envie de vendre votre raquette ? Padeal est là pour vous ! </p>
+                            <a class="button button-hero"  href="{{ path('category') }}">Visitez notre e-shop</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--================ Hero banner start =================-->
+
+
+    </main>
+{% endblock %}

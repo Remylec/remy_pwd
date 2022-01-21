@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Symfony2PluginSettings">
+    <option name="pluginEnabled" value="true" />
+    <option name="twigNamespaces">
+      <list>
+        <twig_namespace enabled="false" namespaceType="ADD_PATH" path="templates" />
+        <twig_namespace enabled="false" namespaceType="ADD_PATH" path="vendor/symfony/twig-bridge/Resources/views/Form" />
+        <twig_namespace enabled="false" namespaceType="BUNDLE" path="templates" />
+        <twig_namespace enabled="false" namespace="Debug" namespaceType="ADD_PATH" path="vendor/symfony/debug-bundle/Resources/views" />
+        <twig_namespace enabled="false" namespace="DebugBundle" namespaceType="BUNDLE" path="vendor/symfony/debug-bundle/Resources/views" />
+        <twig_namespace enabled="false" namespace="Doctrine" namespaceType="ADD_PATH" path="vendor/doctrine/doctrine-bundle/Resources/views" />
+        <twig_namespace enabled="false" namespace="DoctrineBundle" namespaceType="BUNDLE" path="vendor/doctrine/doctrine-bundle/Resources/views" />
+        <twig_namespace enabled="false" namespace="DoctrineMigrations" namespaceType="ADD_PATH" path="vendor/doctrine/doctrine-migrations-bundle/Resources/views" />
+        <twig_namespace enabled="false" namespace="DoctrineMigrationsBundle" namespaceType="BUNDLE" path="vendor/doctrine/doctrine-migrations-bundle/Resources/views" />
+        <twig_namespace enabled="false" namespace="email" namespaceType="ADD_PATH" path="vendor/symfony/twig-bridge/Resources/views/Email" />
+        <twig_namespace enabled="false" namespace="Security" namespaceType="ADD_PATH" path="vendor/symfony/security-bundle/Resources/views" />
+        <twig_namespace enabled="false" namespace="SecurityBundle" namespaceType="BUNDLE" path="vendor/symfony/security-bundle/Resources/views" />
+        <twig_namespace enabled="false" namespace="WebProfiler" namespaceType="ADD_PATH" path="vendor/symfony/web-profiler-bundle/Resources/views" />
+        <twig_namespace enabled="false" namespace="WebProfilerBundle" namespaceType="BUNDLE" path="vendor/symfony/web-profiler-bundle/Resources/views" />
+      </list>
+    </option>
+  </component>
+</project>

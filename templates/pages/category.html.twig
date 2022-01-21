@@ -1,0 +1,136 @@
+{% extends 'layouts/bootstrap-base.html.twig' %}
+
+{% block content %}
+
+    <!-- ================ start banner area ================= -->
+    <section class="blog-banner-area" id="category">
+        <div class="container h-100">
+            <div class="blog-banner">
+                <div class="text-center">
+                    <h1>Annonces</h1>
+                    <nav aria-label="breadcrumb" class="banner-breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item active" aria-current="page">Liste des annonces - Raquettes</li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ================ end banner area ================= -->
+
+
+    <!-- ================ category section start ================= -->
+    <section class="section-margin--small mb-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-3 col-lg-4 col-md-5">
+                    <div class="sidebar-categories">
+                        <div class="head">Categories</div>
+                        <ul class="main-categories">
+                            <li class="common-filter">
+                                <form action="#">
+                                    <ul>
+                                        <li class="filter-list"><input class="pixel-radio" type="radio" id="men" name="brand"><label for="men">Homme<span> (3600)</span></label></li>
+                                        <li class="filter-list"><input class="pixel-radio" type="radio" id="women" name="brand"><label for="women">Dame<span> (3600)</span></label></li>
+                                        <li class="filter-list"><input class="pixel-radio" type="radio" id="accessories" name="brand"><label for="accessories">Junior<span> (3600)</span></label></li>
+                                    </ul>
+                                </form>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="sidebar-filter">
+                        <div class="top-filter-head">Filtre</div>
+                        <div class="common-filter">
+                            <div class="head">Marque</div>
+                            <form action="#">
+                                <ul>
+                                    <li class="filter-list"><input class="pixel-radio" type="radio" id="apple" name="brand"><label for="apple">Adidas<span>(29)</span></label></li>
+                                    <li class="filter-list"><input class="pixel-radio" type="radio" id="asus" name="brand"><label for="asus">Babolat<span>(29)</span></label></li>
+                                    <li class="filter-list"><input class="pixel-radio" type="radio" id="gionee" name="brand"><label for="gionee">Head<span>(19)</span></label></li>
+                                    <li class="filter-list"><input class="pixel-radio" type="radio" id="micromax" name="brand"><label for="micromax">Siux<span>(19)</span></label></li>
+                                    <li class="filter-list"><input class="pixel-radio" type="radio" id="samsung" name="brand"><label for="samsung">Starvie<span>(19)</span></label></li>
+                                </ul>
+                            </form>
+                        </div>
+                        <div class="common-filter">
+                            <div class="head"></div>
+                            <form action="#">
+
+                            </form>
+                        </div>
+                        <div class="common-filter">
+                            <div class="head">Prix</div>
+                            <div class="price-range-area">
+                                <div id="price-range"></div>
+                                <div class="value-wrapper d-flex">
+                                    <div class="price">Prix</div>
+                                    <span>€</span>
+                                    <div id="lower-value"></div>
+                                    <div class="to">à</div>
+                                    <span>€</span>
+                                    <div id="upper-value"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-9 col-lg-8 col-md-7">
+                    <!-- Start Filter Bar -->
+                    <div class="filter-bar d-flex flex-wrap align-items-center">
+                        <div class="sorting">
+                            <select>
+                                <option value="1">Trier par catégorie</option>
+                                <option value="1">Trier par forme</option>
+                                <option value="1">Trier par prix</option>
+                            </select>
+                        </div>
+                        <div class="sorting mr-auto">
+                            <select>
+                                <option value="1">Afficher 15</option>
+                                <option value="1">Afficher 30</option>
+                                <option value="1">Afficher 60</option>
+                            </select>
+                        </div>
+                        <div>
+                            <div class="input-group filter-bar-search">
+                                <input type="text" placeholder="Rechercher">
+                                <div class="input-group-append">
+                                    <button type="button"><i class="ti-search"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Filter Bar -->
+                    <!-- Start Best Seller -->
+                    <section class="lattest-product-area pb-40 category-list">
+                        <div class="row">
+                            <div class="col-md-6 col-lg-4">
+                                <div class="card text-center card-product">
+                                    <div class="card-product__img">
+                                        <img class="card-img" src="img/product/PadelRaq.jpeg" alt="">
+                                        <ul class="card-product__imgOverlay">
+                                            <a href="{{ path('product') }}"><li><button ><i class="ti-search"></i></button></li></a>
+                                            <li><button><i class="ti-heart"></i></button></li>
+                                        </ul>
+                                    </div>
+                                    <div class="card-body">
+                                        <p>Raquette Homme</p>
+                                        <h4 class="card-product__title"><a href="#">Head Alpha Pro</a></h4>
+                                        <p class="card-product__price">70€</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                                </div>
+
+
+                    </section>
+                    <!-- End Best Seller -->
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ================ category section end ================= -->
+
+{% endblock %}
