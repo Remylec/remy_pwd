@@ -1,7 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9671c091-6b8d-47ce-83c7-af3c940a8994" name="Default Changelist" comment="" />
+    <list default="true" id="9671c091-6b8d-47ce-83c7-af3c940a8994" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Controller/RegisterController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/form/RegisterFormType.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/admin/dashboard.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/remy_pwd.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/remy_pwd.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/symfony2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/symfony2.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/bundles.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/bundles.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/packages/security.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/security.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/services.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/services.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/migrations/Version20220117112320.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/migrations/Version20220117202929.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/Admin/DashboardController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/Admin/DashboardController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/Advert.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/Category.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/LikeAdvert.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/Photo.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/User.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Repository/AdvertRepository.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Repository/CategoryRepository.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Repository/LikeAdvertRepository.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Repository/PhotoRepository.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Repository/UserRepository.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/symfony.lock" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -13,6 +43,36 @@
       <executable />
     </execution>
   </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="@localhost" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="padeal: schema" type="76f4a085:MysqlImplModel$Schema" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
@@ -21,7 +81,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/pwd" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
@@ -159,30 +219,37 @@
       <path value="$PROJECT_DIR$/vendor/symfony/uid" />
       <path value="$PROJECT_DIR$/vendor/symfony/polyfill-uuid" />
       <path value="$PROJECT_DIR$/vendor/easycorp/easyadmin-bundle" />
+      <path value="$PROJECT_DIR$/vendor/vich/uploader-bundle" />
+      <path value="$PROJECT_DIR$/vendor/jms/metadata" />
     </include_path>
   </component>
   <component name="ProjectId" id="22gpsTr5F6IFYGupSwANDlvW1Of" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="mysql" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/public/img/category" />
-    <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php" />
+    <property name="settings.editor.selected.configurable" value="Errors" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src" />
+      <recent name="$PROJECT_DIR$/public/img/product" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/public/img/category" />
       <recent name="$PROJECT_DIR$/public" />
       <recent name="$PROJECT_DIR$/src/Controller" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/public/img/product" />
     </key>
   </component>
   <component name="RunManager">
@@ -215,7 +282,8 @@
       <workItem from="1642241064280" duration="2223000" />
       <workItem from="1642412637658" duration="9789000" />
       <workItem from="1642682857163" duration="1530000" />
-      <workItem from="1642750148651" duration="1409000" />
+      <workItem from="1642750148651" duration="21467000" />
+      <workItem from="1642856403914" duration="5391000" />
     </task>
     <servers />
   </component>
@@ -223,25 +291,37 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="384" y="244" key="NewPhpClassDialog" timestamp="1641225713484">
+    <state x="240" y="77" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1642754676811">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
-    <state x="384" y="244" key="NewPhpClassDialog/0.23.1280.777@0.23.1280.777" timestamp="1641225713484" />
-    <state x="149" y="50" key="SettingsEditor" timestamp="1642512811739">
+    <state x="240" y="77" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1280.777@0.23.1280.777" timestamp="1642754676811" />
+    <state width="234" height="457" key="HiddenNamespacesPopup" timestamp="1642754717529">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
-    <state x="149" y="50" key="SettingsEditor/0.23.1280.777@0.23.1280.777" timestamp="1642512811739" />
-    <state x="319" y="235" key="com.intellij.ide.util.TipDialog" timestamp="1642750148627">
+    <state width="234" height="457" key="HiddenNamespacesPopup/0.23.1280.777@0.23.1280.777" timestamp="1642754717529" />
+    <state x="384" y="244" key="NewPhpClassDialog" timestamp="1642858884790">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
-    <state x="319" y="235" key="com.intellij.ide.util.TipDialog/0.23.1280.777@0.23.1280.777" timestamp="1642750148627" />
+    <state x="384" y="244" key="NewPhpClassDialog/0.23.1280.777@0.23.1280.777" timestamp="1642858884790" />
+    <state x="461" y="342" key="NewPhpFileDialog" timestamp="1642781040440">
+      <screen x="0" y="23" width="1280" height="777" />
+    </state>
+    <state x="461" y="342" key="NewPhpFileDialog/0.23.1280.777@0.23.1280.777" timestamp="1642781040440" />
+    <state x="149" y="50" key="SettingsEditor" timestamp="1642780804529">
+      <screen x="0" y="23" width="1280" height="777" />
+    </state>
+    <state x="149" y="50" key="SettingsEditor/0.23.1280.777@0.23.1280.777" timestamp="1642780804529" />
+    <state x="319" y="235" key="com.intellij.ide.util.TipDialog" timestamp="1642856402874">
+      <screen x="0" y="23" width="1280" height="777" />
+    </state>
+    <state x="319" y="235" key="com.intellij.ide.util.TipDialog/0.23.1280.777@0.23.1280.777" timestamp="1642856402874" />
     <state x="306" y="168" width="667" height="486" key="find.popup" timestamp="1641296489179">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
     <state x="306" y="168" width="667" height="486" key="find.popup/0.23.1280.777@0.23.1280.777" timestamp="1641296489179" />
-    <state x="305" y="124" width="670" height="676" key="search.everywhere.popup" timestamp="1642516205742">
+    <state x="305" y="124" width="670" height="676" key="search.everywhere.popup" timestamp="1642780990973">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
-    <state x="305" y="124" width="670" height="676" key="search.everywhere.popup/0.23.1280.777@0.23.1280.777" timestamp="1642516205742" />
+    <state x="305" y="124" width="670" height="676" key="search.everywhere.popup/0.23.1280.777@0.23.1280.777" timestamp="1642780990973" />
   </component>
 </project>
