@@ -28,7 +28,7 @@ class RegisterFormType extends AbstractType
                 'first_options' => ['label' => 'mot de passe'],
                 'second_options' => ['label' => 'confirmation']
             ])
-            ->add('bouton', SubmitType::class, ['label' => 'Envoyer']);
+            ->add('button', SubmitType::class, ['label' => 'Envoyer']);
     }
 
     public function configureOptions(OptionsResolver $resolver)

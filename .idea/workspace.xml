@@ -2,35 +2,26 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9671c091-6b8d-47ce-83c7-af3c940a8994" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Controller/RegisterController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/form/RegisterFormType.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/admin/dashboard.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Twig/AppExtension.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/layouts/pagination.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/remy_pwd.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/remy_pwd.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/symfony2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/symfony2.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/bundles.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/bundles.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/packages/security.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/security.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/services.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/services.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/migrations/Version20220117112320.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/migrations/Version20220117202929.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/Admin/DashboardController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/Admin/DashboardController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/Advert.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/Category.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/LikeAdvert.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/Photo.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/User.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Repository/AdvertRepository.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Repository/CategoryRepository.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Repository/LikeAdvertRepository.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Repository/PhotoRepository.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Repository/UserRepository.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/migrations/Version20220121161019.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/migrations/Version20220121163519.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/DefaultController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/DefaultController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/RegisterController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/RegisterController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/form/RegisterFormType.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/form/RegisterFormType.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/symfony.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/layouts/bootstrap-base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/layouts/bootstrap-base.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/pages/category.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/pages/adverts.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/pages/home.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/pages/home.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/pages/login.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/pages/login.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/pages/register.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/pages/register.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,7 +74,7 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="PhpWorkspaceProjectConfiguration">
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP 7.4">
     <include_path>
       <path value="$PROJECT_DIR$/vendor/sebastian/resource-operations" />
       <path value="$PROJECT_DIR$/vendor/sebastian/exporter" />
@@ -221,6 +212,8 @@
       <path value="$PROJECT_DIR$/vendor/easycorp/easyadmin-bundle" />
       <path value="$PROJECT_DIR$/vendor/vich/uploader-bundle" />
       <path value="$PROJECT_DIR$/vendor/jms/metadata" />
+      <path value="$PROJECT_DIR$/vendor/knplabs/knp-paginator-bundle" />
+      <path value="$PROJECT_DIR$/vendor/knplabs/knp-components" />
     </include_path>
   </component>
   <component name="ProjectId" id="22gpsTr5F6IFYGupSwANDlvW1Of" />
@@ -239,17 +232,20 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/public/img/category" />
-    <property name="settings.editor.selected.configurable" value="Errors" />
+    <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src" />
-      <recent name="$PROJECT_DIR$/public/img/product" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/public/img/category" />
       <recent name="$PROJECT_DIR$/public" />
       <recent name="$PROJECT_DIR$/src/Controller" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/templates/layouts" />
+      <recent name="$PROJECT_DIR$/src" />
+      <recent name="$PROJECT_DIR$/src/Controller" />
+      <recent name="$PROJECT_DIR$/src/security" />
+      <recent name="$PROJECT_DIR$/public/img/product" />
     </key>
   </component>
   <component name="RunManager">
@@ -283,7 +279,8 @@
       <workItem from="1642412637658" duration="9789000" />
       <workItem from="1642682857163" duration="1530000" />
       <workItem from="1642750148651" duration="21467000" />
-      <workItem from="1642856403914" duration="5391000" />
+      <workItem from="1642856403914" duration="5440000" />
+      <workItem from="1642863113099" duration="12341000" />
     </task>
     <servers />
   </component>
@@ -295,25 +292,32 @@
       <screen x="0" y="23" width="1280" height="777" />
     </state>
     <state x="240" y="77" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1280.777@0.23.1280.777" timestamp="1642754676811" />
+    <state x="172" y="23" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1642863621067">
+      <screen x="0" y="23" width="1280" height="777" />
+    </state>
+    <state x="172" y="23" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.23.1280.777/-2560.-310.2560.1417@0.23.1280.777" timestamp="1642863621067" />
     <state width="234" height="457" key="HiddenNamespacesPopup" timestamp="1642754717529">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
     <state width="234" height="457" key="HiddenNamespacesPopup/0.23.1280.777@0.23.1280.777" timestamp="1642754717529" />
-    <state x="384" y="244" key="NewPhpClassDialog" timestamp="1642858884790">
+    <state x="384" y="244" key="NewPhpClassDialog" timestamp="1642890025314">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
+    <state x="384" y="244" key="NewPhpClassDialog/0.23.1280.777/-2560.-310.2560.1417@0.23.1280.777" timestamp="1642890025314" />
     <state x="384" y="244" key="NewPhpClassDialog/0.23.1280.777@0.23.1280.777" timestamp="1642858884790" />
     <state x="461" y="342" key="NewPhpFileDialog" timestamp="1642781040440">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
     <state x="461" y="342" key="NewPhpFileDialog/0.23.1280.777@0.23.1280.777" timestamp="1642781040440" />
-    <state x="149" y="50" key="SettingsEditor" timestamp="1642780804529">
+    <state x="149" y="50" key="SettingsEditor" timestamp="1642863213999">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
+    <state x="149" y="50" key="SettingsEditor/0.23.1280.777/-2560.-310.2560.1417@0.23.1280.777" timestamp="1642863213999" />
     <state x="149" y="50" key="SettingsEditor/0.23.1280.777@0.23.1280.777" timestamp="1642780804529" />
-    <state x="319" y="235" key="com.intellij.ide.util.TipDialog" timestamp="1642856402874">
+    <state x="319" y="235" key="com.intellij.ide.util.TipDialog" timestamp="1642863115738">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
+    <state x="319" y="235" key="com.intellij.ide.util.TipDialog/0.23.1280.777/-2560.-310.2560.1417@0.23.1280.777" timestamp="1642863115738" />
     <state x="319" y="235" key="com.intellij.ide.util.TipDialog/0.23.1280.777@0.23.1280.777" timestamp="1642856402874" />
     <state x="306" y="168" width="667" height="486" key="find.popup" timestamp="1641296489179">
       <screen x="0" y="23" width="1280" height="777" />
