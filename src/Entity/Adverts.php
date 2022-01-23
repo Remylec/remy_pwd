@@ -224,4 +224,14 @@ class Adverts
             $this->updatedAt = new \DateTimeImmutable();
         }
     }
+
+    public function isFavByUser(User $user) : bool{
+        foreach($this->favorites as $fav){
+            if($fav->getUser() === $user){
+                return true;
+            }
+        }
+        return false;
+    }
+
 }

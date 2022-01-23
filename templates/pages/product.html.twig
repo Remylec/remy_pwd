@@ -1,5 +1,12 @@
 {% extends 'layouts/bootstrap-base.html.twig' %}
 
+{% block javascripts %}
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script type="module" src="{{asset('js/app.js')}}"></script>
+
+{% endblock %}
+
 {% block content %}
 
     <!-- ================ start banner area ================= -->
@@ -36,7 +43,14 @@
                 <div class="col-lg-5 offset-lg-1">
                     <div class="s_product_text">
                         <h3>{{ advert.title }}</h3>
-                        <i class="far fa-star"></i>
+                        <a class="js-fav" href="{{ path('fav',{'id':advert.id}) }}">
+                            {% if app.user and advert.isFavByUser(app.user)== false %}
+                            <i class="far fa-star"></i>
+                            {% else %}
+                            <i class="fas fa-star"></i>
+                            {% endif %}
+
+                        </a>
                         <p>{{ advert.description }}</p>
                         <p>{{ advert.product.brand }}</p>
                         <p>{{ advert.product.title }}</p>
@@ -56,3 +70,5 @@
     <!--================End Single Product Area =================-->
 
 {% endblock %}
+
+
