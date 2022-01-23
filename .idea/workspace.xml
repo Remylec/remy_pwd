@@ -2,15 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9671c091-6b8d-47ce-83c7-af3c940a8994" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/fav.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/DefaultController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/DefaultController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Controller/SearchController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/SearchController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Entity/Adverts.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Adverts.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/layouts/bootstrap-base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/layouts/bootstrap-base.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/pages/product.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/pages/product.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/pages/profile.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/pages/profile.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -273,7 +268,7 @@
       <workItem from="1642856403914" duration="5440000" />
       <workItem from="1642863113099" duration="19519000" />
       <workItem from="1642903605525" duration="131000" />
-      <workItem from="1642926864048" duration="7790000" />
+      <workItem from="1642926864048" duration="12923000" />
     </task>
     <servers />
   </component>

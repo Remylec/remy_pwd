@@ -225,6 +225,10 @@ class Adverts
         }
     }
 
+    public function getImageFile(): ?File{
+        return $this->imageFile;
+    }
+
     public function isFavByUser(User $user) : bool{
         foreach($this->favorites as $fav){
             if($fav->getUser() === $user){

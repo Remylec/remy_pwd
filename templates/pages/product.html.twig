@@ -56,12 +56,13 @@
                         <p>{{ advert.product.title }}</p>
                         <h2>{{ advert.price }}€</h2>
                         <div class="product_count">
-                            <a class="button primary-btn" href="#">Acheter</a>
+                            {{ form_start(form) }}
+                            <input type="hidden" value="{{advert.id}}" name="advertId">
+                            {{ form_widget(form.button,{'attr':{'class':'button primary-btn'}}) }}
+                            {{ form_end(form) }}
+
                         </div>
-                        <div class="card_area d-flex align-items-center">
-                            <a class="icon_btn" href="#"><i class="lnr lnr lnr-diamond"></i></a>
-                            <a class="icon_btn" href="#"><i class="lnr lnr lnr-heart"></i></a>
-                        </div>
+
                     </div>
                 </div>
             </div>
