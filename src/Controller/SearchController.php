@@ -14,14 +14,32 @@ class SearchController extends AbstractController
      * @Route("/adverts", name="adverts")
      */
 
-    public function adverts(AdvertsRepository $advertsRepository,PaginatorInterface $paginator,Request $request)
+    public function adverts(AdvertsRepository $advertsRepository, PaginatorInterface $paginator, Request $request)
     {
-        $adverts=$advertsRepository->findAll();
+        $adverts = $advertsRepository->findAll();
         $adverts = $paginator->paginate(
             $adverts,
-            $request->query->getInt('page',1),
+            $request->query->getInt('page', 1),
             6
         );
-        return $this->render('pages/adverts.html.twig',['adverts'=>$adverts]);
+        return $this->render('pages/adverts.html.twig', ['adverts' => $adverts]);
     }
+
+    /**
+     * @Route("/advert/{id<\d+>}", name="advert-info")
+     */
+    public function advertInfo(
+        int $id,
+        AdvertsRepository $advertsRepository
+    )
+    {
+
+        $advert = $advertsRepository->findOneBy(['id' => $id]);
+
+        if (!$advert) {
+            return $this->redirectToRoute('adverts');
+        }
+        return $this->render('pages/product.html.twig', ['advert' => $advert]);
+    }
+
 }

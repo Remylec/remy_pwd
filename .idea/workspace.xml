@@ -2,26 +2,26 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9671c091-6b8d-47ce-83c7-af3c940a8994" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Twig/AppExtension.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/layouts/pagination.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/remy_pwd.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/remy_pwd.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/uploads/Siux-Pegasus.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/uploads/adidas-adipower-junior-2021.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/uploads/artengo_pr100.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/uploads/babolat-tech-viper.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/uploads/bullpadel-indiga.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/uploads/headalphapro.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/uploads/headflashpro.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/uploads/kuikmapr950.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/uploads/wilson-blade.jpeg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/bundles.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/bundles.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/packages/security.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/security.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/migrations/Version20220121161019.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/migrations/Version20220121163519.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/packages/vich_uploader.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/vich_uploader.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/services.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/services.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Controller/DefaultController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/DefaultController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/RegisterController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/RegisterController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/form/RegisterFormType.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/form/RegisterFormType.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/symfony.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/SearchController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/SearchController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/Adverts.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Adverts.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/Brand.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Brand.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Twig/AppExtension.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Twig/AppExtension.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/layouts/bootstrap-base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/layouts/bootstrap-base.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/pages/category.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/pages/adverts.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/pages/home.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/pages/home.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/pages/login.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/pages/login.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/pages/register.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/pages/register.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/pages/adverts.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/pages/adverts.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/pages/product.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/pages/product.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -231,11 +231,12 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/public/img/category" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/public/img/uploads" />
     <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/public/img/uploads" />
       <recent name="$PROJECT_DIR$/public/img/category" />
       <recent name="$PROJECT_DIR$/public" />
       <recent name="$PROJECT_DIR$/src/Controller" />
@@ -280,7 +281,7 @@
       <workItem from="1642682857163" duration="1530000" />
       <workItem from="1642750148651" duration="21467000" />
       <workItem from="1642856403914" duration="5440000" />
-      <workItem from="1642863113099" duration="12341000" />
+      <workItem from="1642863113099" duration="19284000" />
     </task>
     <servers />
   </component>
@@ -323,9 +324,10 @@
       <screen x="0" y="23" width="1280" height="777" />
     </state>
     <state x="306" y="168" width="667" height="486" key="find.popup/0.23.1280.777@0.23.1280.777" timestamp="1641296489179" />
-    <state x="305" y="124" width="670" height="676" key="search.everywhere.popup" timestamp="1642780990973">
+    <state x="305" y="124" width="670" height="676" key="search.everywhere.popup" timestamp="1642891826714">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
+    <state x="305" y="124" width="670" height="676" key="search.everywhere.popup/0.23.1280.777/-2560.-310.2560.1417@0.23.1280.777" timestamp="1642891826714" />
     <state x="305" y="124" width="670" height="676" key="search.everywhere.popup/0.23.1280.777@0.23.1280.777" timestamp="1642780990973" />
   </component>
 </project>

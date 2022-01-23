@@ -125,30 +125,29 @@
                                 <div class="col-md-6 col-lg-4">
                                     <div class="card text-center card-product">
                                         <div class="card-product__img">
-                                            <img class="card-img" src="img/product/PadelRaq.jpeg" alt="">
+                                            <img class="card-img" src="{{ vich_uploader_asset(advert,'imageFile') }}"
+                                                 alt="">
                                             <ul class="card-product__imgOverlay">
-                                                <a href="{{ path('product') }}">
+                                                <a href="{{ path('advert-info',{'id': advert.id}) }}">
                                                     <li>
                                                         <button><i class="ti-search"></i></button>
                                                     </li>
                                                 </a>
-                                                <li>
-                                                    <button><i class="ti-heart"></i></button>
-                                                </li>
+
                                             </ul>
                                         </div>
                                         <div class="card-body">
-                                            <p>Raquette {{ advert.product.category }}</p>
+                                            <p>Raquette {{ advert.product.category|genderFilter }}</p>
                                             <h4 class="card-product__title"><a href="#">{{ advert.product.title }}</a>
                                             </h4>
-                                            <p class="card-product__price">{{ advert.price }}</p>
+                                            <p class="card-product__price">{{ advert.price }}€</p>
                                         </div>
                                     </div>
                                 </div>
                             {% endfor %}
 
                         </div>
-                        {{ knp_pagination_render(adverts, 'layouts/pagination.html.twig')}}
+                        {{ knp_pagination_render(adverts, 'layouts/pagination.html.twig') }}
 
 
                     </section>

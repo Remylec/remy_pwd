@@ -26,35 +26,23 @@
         <div class="container">
             <div class="row s_product_inner">
                 <div class="col-lg-6">
-                    <div class="owl-carousel owl-theme s_Product_carousel">
+                    <div>
                         <div class="single-prd-item">
-                            <img class="img-fluid" src="img/category/PadelRaq.jpeg" alt="">
+                            <img class="img-fluid" src="/{{ vich_uploader_asset(advert,'imageFile') }}" alt="">
                         </div>
-                        <!-- <div class="single-prd-item">
-                            <img class="img-fluid" src="img/category/s-p1.jpg" alt="">
-                        </div>
-                        <div class="single-prd-item">
-                            <img class="img-fluid" src="img/category/s-p1.jpg" alt="">
-                        </div> -->
+
                     </div>
                 </div>
                 <div class="col-lg-5 offset-lg-1">
                     <div class="s_product_text">
-                        <h3>Head Alpha Pro</h3>
-                        <h2>150€</h2>
-                        <ul class="list">
-                            <li><a class="active" href="#"><span>Category</span> : Household</a></li>
-                            <li><a href="#"><span>Availibility</span> : In Stock</a></li>
-                        </ul>
-                        <p>Raquette Head Alpha Pro 2021, une raquette équilibrée qui conviendra tant aux attaquants qu'au défenseur grâce à son équilibre puissance et précisions.</p>
+                        <h3>{{ advert.title }}</h3>
+                        <i class="far fa-star"></i>
+                        <p>{{ advert.description }}</p>
+                        <p>{{ advert.product.brand }}</p>
+                        <p>{{ advert.product.title }}</p>
+                        <h2>{{ advert.price }}€</h2>
                         <div class="product_count">
-                            <label for="qty">Quantity:</label>
-                            <button onclick="var result = document.getElementById('sst'); var sst = result.value; if( !isNaN( sst )) result.value++;return false;"
-                                    class="increase items-count" type="button"><i class="ti-angle-left"></i></button>
-                            <input type="text" name="qty" id="sst" size="2" maxlength="12" value="1" title="Quantity:" class="input-text qty">
-                            <button onclick="var result = document.getElementById('sst'); var sst = result.value; if( !isNaN( sst ) &amp;&amp; sst > 0 ) result.value--;return false;"
-                                    class="reduced items-count" type="button"><i class="ti-angle-right"></i></button>
-                            <a class="button primary-btn" href="#">Add to Cart</a>
+                            <a class="button primary-btn" href="#">Acheter</a>
                         </div>
                         <div class="card_area d-flex align-items-center">
                             <a class="icon_btn" href="#"><i class="lnr lnr lnr-diamond"></i></a>

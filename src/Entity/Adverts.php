@@ -6,9 +6,14 @@ use App\Repository\AdvertsRepository;
 use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\Common\Collections\Collection;
 use Doctrine\ORM\Mapping as ORM;
+use Vich\UploaderBundle\Mapping\Annotation as Vich;
+use Symfony\Component\Validator\Constraints as Assert;
+use Symfony\Component\HttpFoundation\File\File;
+
 
 /**
  * @ORM\Entity(repositoryClass=AdvertsRepository::class)
+ * @Vich\Uploadable
  */
 class Adverts
 {
@@ -38,6 +43,23 @@ class Adverts
      * @ORM\Column(type="string", length=255)
      */
     private $image;
+
+    /**
+     * @Vich\UploadableField(mapping = "padeal_images", fileNameProperty = "image")
+     * @Assert\File(
+     *  maxSize="10M",
+     *  mimeTypes={"image/png", "image/jpg", "image/jpeg"},
+     *  mimeTypesMessage="Format d'image incorrect !"
+     * )
+     * @var File
+     */
+    private $imageFile;
+
+    /**
+     * @ORM\Column(type="datetime",nullable=true)
+     * @var \DateTimeInterface|null
+     */
+    private $updatedAt;
 
     /**
      * @ORM\Column(type="boolean",options={"default":0})
@@ -183,5 +205,23 @@ class Adverts
         $this->product = $product;
 
         return $this;
+    }
+    public function getPhotoFile(): ?File
+    {
+        return $this->imageFile;
+    }
+
+    /**
+     *  @param File|\Symfony\Component\HttpFoundation\File\UploadedFile|null $imageFile
+     */
+    public function setImageFile(?File $imageFile = null): void
+    {
+        $this->imageFile = $imageFile;
+
+        if (null !== $imageFile) {
+            // It is required that at least one field changes if you are using doctrine
+            // otherwise the event listeners won't be called and the file is lost
+            $this->updatedAt = new \DateTimeImmutable();
+        }
     }
 }

@@ -1,26 +1,26 @@
 {% extends 'base.html.twig' %}
 
 {% block stylesheets %}
-    <link rel="icon" href="img/Fevicon.png" type="image/png">
-    <link rel="stylesheet" href="vendors/bootstrap/bootstrap.min.css">
-    <link rel="stylesheet" href="vendors/fontawesome/css/all.min.css">
-    <link rel="stylesheet" href="vendors/themify-icons/themify-icons.css">
-    <link rel="stylesheet" href="vendors/nice-select/nice-select.css">
-    <link rel="stylesheet" href="vendors/owl-carousel/owl.theme.default.min.css">
-    <link rel="stylesheet" href="vendors/owl-carousel/owl.carousel.min.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="{{ asset('img/Fevicon.png') }}" type="image/png">
+    <link rel="stylesheet" href="{{ asset('vendors/bootstrap/bootstrap.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('vendors/fontawesome/css/all.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('vendors/themify-icons/themify-icons.css') }}">
+    <link rel="stylesheet" href="{{ asset('vendors/nice-select/nice-select.css') }}">
+    <link rel="stylesheet" href="{{ asset('vendors/owl-carousel/owl.theme.default.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('vendors/owl-carousel/owl.carousel.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/style.css') }}">
 {% endblock %}
 
 {% block javascripts %}
 
-    <script src="vendors/jquery/jquery-3.2.1.min.js"></script>
-    <script src="vendors/bootstrap/bootstrap.bundle.min.js"></script>
-    <script src="vendors/skrollr.min.js"></script>
-    <script src="vendors/owl-carousel/owl.carousel.min.js"></script>
-    <script src="vendors/nice-select/jquery.nice-select.min.js"></script>
-    <script src="vendors/jquery.ajaxchimp.min.js"></script>
-    <script src="vendors/mail-script.js"></script>
-    <script src="js/main.js"></script>
+    <script src="{{ asset('vendors/jquery/jquery-3.2.1.min.js') }}"></script>
+    <script src="{{ asset('vendors/bootstrap/bootstrap.bundle.min.js') }}"></script>
+    <script src="{{ asset('vendors/skrollr.min.js') }}"></script>
+    <script src="{{ asset('vendors/owl-carousel/owl.carousel.min.js') }}"></script>
+    <script src="{{ asset('vendors/nice-select/jquery.nice-select.min.js') }}"></script>
+    <script src="{{ asset('vendors/jquery.ajaxchimp.min.js') }}"></script>
+    <script src="{{ asset('vendors/mail-script.js') }}"></script>
+    <script src="{{ asset('js/main.js') }}"></script>
 
 
 {% endblock %}
@@ -32,7 +32,7 @@
         <div class="main_menu">
             <nav class="navbar navbar-expand-lg navbar-light">
                 <div class="container">
-                    <a class="navbar-brand logo_h" href="{{ path('home') }}"><img src="img/logo.png" alt=""></a>
+                    <a class="navbar-brand logo_h" href="{{ path('home') }}"><img src="{{ asset('img/logo.png') }}" alt=""></a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="icon-bar"></span>
@@ -47,7 +47,6 @@
                                    aria-expanded="false">Shop</a>
                                 <ul class="dropdown-menu">
                                     <li class="nav-item"><a class="nav-link" href="{{ path('adverts') }}">Annonces</a></li>
-                                    <li class="nav-item"><a class="nav-link" href="{{ path('product') }}">Détails produit</a></li>
                                 </ul>
                             </li>
                             <li class="nav-item submenu dropdown">

@@ -11,7 +11,9 @@ class AppExtension extends AbstractExtension
 {
     public function getFilters()
     {
-        return [];
+        return [
+            new TwigFilter('genderFilter',[$this,'formatGender'])
+        ];
     }
 
     public function formatGender($gender)

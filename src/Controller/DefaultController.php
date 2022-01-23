@@ -42,12 +42,5 @@ class DefaultController extends AbstractController
         return $this->render('pages/contact.html.twig');
     }
 
-    /**
-     * @Route("/product", name="product")
-     */
 
-    public function product()
-    {
-        return $this->render('pages/product.html.twig');
-    }
 }
