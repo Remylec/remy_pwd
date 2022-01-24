@@ -40,14 +40,6 @@ class DefaultController extends AbstractController
         return $this->render('pages/profile.html.twig');
     }
 
-    /**
-     * @Route("/contact", name="contact")
-     */
-
-    public function contact()
-    {
-        return $this->render('pages/contact.html.twig');
-    }
 
 
 

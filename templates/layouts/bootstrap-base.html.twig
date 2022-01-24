@@ -50,15 +50,15 @@
                                    aria-haspopup="true"
                                    aria-expanded="false">Compte</a>
                                 <ul class="dropdown-menu">
-                                    <li class="nav-item"><a class="nav-link" href="{{ path('app_login') }}">Se
-                                            connecter</a></li>
-                                    <li class="nav-item"><a class="nav-link"
-                                                            href="{{ path('register') }}">S'enregistrer</a></li>
+                                    {% if app.user != true %}
+                                    <li class="nav-item"><a class="nav-link" href="{{ path('app_login') }}">Se connecter</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="{{ path('register') }}">S'enregistrer</a></li>
+                                    {% endif %}
                                     <li class="nav-item"><a class="nav-link" href="{{ path('profile') }}">Profil</a>
                                     </li>
                                 </ul>
                             </li>
-                            <li class="nav-item"><a class="nav-link" href="{{ path('contact') }}">Publier votre annonce</a></li>
+                            <li class="nav-item"><a class="nav-link" href="{{ path('advert_form') }}">Publier votre annonce</a></li>
                         </ul>
 
                         <ul class="nav-shop">

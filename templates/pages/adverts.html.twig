@@ -26,7 +26,7 @@
             <div class="row">
                 <div class="col-xl-3 col-lg-4 col-md-5">
                     <div class="sidebar-categories">
-                        <div class="head">Categories</div>
+                        <!--<div class="head">Categories</div>
                         <ul class="main-categories">
                             <li class="common-filter">
                                 <form action="#">
@@ -43,7 +43,7 @@
                                     </ul>
                                 </form>
                             </li>
-                        </ul>
+                        </ul>-->
                     </div>
                     <div class="sidebar-filter">
                         <div class="top-filter-head">Filtre</div>
@@ -75,39 +75,12 @@
 
                             </form>
                         </div>
-                        <div class="common-filter">
-                            <div class="head">Prix</div>
-                            <div class="price-range-area">
-                                <div id="price-range"></div>
-                                <div class="value-wrapper d-flex">
-                                    <div class="price">Prix</div>
-                                    <span>€</span>
-                                    <div id="lower-value"></div>
-                                    <div class="to">à</div>
-                                    <span>€</span>
-                                    <div id="upper-value"></div>
-                                </div>
-                            </div>
-                        </div>
+
                     </div>
                 </div>
                 <div class="col-xl-9 col-lg-8 col-md-7">
                     <!-- Start Filter Bar -->
                     <div class="filter-bar d-flex flex-wrap align-items-center">
-                        <div class="sorting">
-                            <select>
-                                <option value="1">Trier par catégorie</option>
-                                <option value="1">Trier par forme</option>
-                                <option value="1">Trier par prix</option>
-                            </select>
-                        </div>
-                        <div class="sorting mr-auto">
-                            <select>
-                                <option value="1">Afficher 15</option>
-                                <option value="1">Afficher 30</option>
-                                <option value="1">Afficher 60</option>
-                            </select>
-                        </div>
                         <div>
                             <div class="input-group filter-bar-search">
                                 <input type="text" placeholder="Rechercher">
@@ -137,8 +110,9 @@
                                             </ul>
                                         </div>
                                         <div class="card-body">
+                                            <h4>{{ advert.title }}</h4>
                                             <p>Raquette {{ advert.product.category|genderFilter }}</p>
-                                            <h4 class="card-product__title"><a href="#">{{ advert.product.title }}</a>
+                                            <h4 class="card-product__title">{{ advert.product.title }}
                                             </h4>
                                             <p class="card-product__price">{{ advert.price }}€</p>
                                         </div>

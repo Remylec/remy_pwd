@@ -3,8 +3,17 @@
   <component name="ChangeListManager">
     <list default="true" id="9671c091-6b8d-47ce-83c7-af3c940a8994" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/services.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/services.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/AdvertFormController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/AdvertFormController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/DefaultController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/DefaultController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/Adverts.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Adverts.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/Product.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Product.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/form/AdvertFormType.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Form/AdvertFormType.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/form/RegisterFormType.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Form/RegisterFormType.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/layouts/bootstrap-base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/layouts/bootstrap-base.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/pages/contact.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/pages/contact.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/pages/adverts.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/pages/adverts.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/pages/contact.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/pages/advertForm.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/pages/product.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/pages/product.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -267,7 +276,8 @@
       <workItem from="1642856403914" duration="5440000" />
       <workItem from="1642863113099" duration="19519000" />
       <workItem from="1642903605525" duration="131000" />
-      <workItem from="1642926864048" duration="18587000" />
+      <workItem from="1642926864048" duration="18808000" />
+      <workItem from="1643025983311" duration="7251000" />
     </task>
     <servers />
   </component>
@@ -283,19 +293,19 @@
       <screen x="0" y="23" width="1280" height="777" />
     </state>
     <state x="172" y="23" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.23.1280.777/-2560.-310.2560.1417@0.23.1280.777" timestamp="1642863621067" />
-    <state x="378" y="173" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1642959505183">
+    <state x="378" y="173" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1643031438170">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
-    <state x="378" y="173" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.23.1280.777/-2560.-310.2560.1417@0.23.1280.777" timestamp="1642946840570" />
+    <state x="378" y="173" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.23.1280.777/-2560.-310.2560.1417@0.23.1280.777" timestamp="1643031438170" />
     <state x="378" y="173" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.23.1280.777@0.23.1280.777" timestamp="1642959505183" />
     <state width="234" height="457" key="HiddenNamespacesPopup" timestamp="1642754717529">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
     <state width="234" height="457" key="HiddenNamespacesPopup/0.23.1280.777@0.23.1280.777" timestamp="1642754717529" />
-    <state x="384" y="244" key="NewPhpClassDialog" timestamp="1642959966671">
+    <state x="384" y="244" key="NewPhpClassDialog" timestamp="1643030147238">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
-    <state x="384" y="244" key="NewPhpClassDialog/0.23.1280.777/-2560.-310.2560.1417@0.23.1280.777" timestamp="1642890025314" />
+    <state x="384" y="244" key="NewPhpClassDialog/0.23.1280.777/-2560.-310.2560.1417@0.23.1280.777" timestamp="1643030147238" />
     <state x="384" y="244" key="NewPhpClassDialog/0.23.1280.777@0.23.1280.777" timestamp="1642959966671" />
     <state x="461" y="342" key="NewPhpFileDialog" timestamp="1642781040440">
       <screen x="0" y="23" width="1280" height="777" />
@@ -306,19 +316,19 @@
     </state>
     <state x="149" y="50" key="SettingsEditor/0.23.1280.777/-2560.-310.2560.1417@0.23.1280.777" timestamp="1642863213999" />
     <state x="149" y="50" key="SettingsEditor/0.23.1280.777@0.23.1280.777" timestamp="1642780804529" />
-    <state x="319" y="235" key="com.intellij.ide.util.TipDialog" timestamp="1642926865026">
+    <state x="319" y="235" key="com.intellij.ide.util.TipDialog" timestamp="1643025984336">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
-    <state x="319" y="235" key="com.intellij.ide.util.TipDialog/0.23.1280.777/-2560.-310.2560.1417@0.23.1280.777" timestamp="1642863115738" />
+    <state x="319" y="235" key="com.intellij.ide.util.TipDialog/0.23.1280.777/-2560.-310.2560.1417@0.23.1280.777" timestamp="1643025984336" />
     <state x="319" y="235" key="com.intellij.ide.util.TipDialog/0.23.1280.777@0.23.1280.777" timestamp="1642926865026" />
     <state x="306" y="168" width="667" height="486" key="find.popup" timestamp="1641296489179">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
     <state x="306" y="168" width="667" height="486" key="find.popup/0.23.1280.777@0.23.1280.777" timestamp="1641296489179" />
-    <state x="305" y="124" width="670" height="676" key="search.everywhere.popup" timestamp="1642959920603">
+    <state x="305" y="124" width="670" height="676" key="search.everywhere.popup" timestamp="1643032989112">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
-    <state x="305" y="124" width="670" height="676" key="search.everywhere.popup/0.23.1280.777/-2560.-310.2560.1417@0.23.1280.777" timestamp="1642945682068" />
+    <state x="305" y="124" width="670" height="676" key="search.everywhere.popup/0.23.1280.777/-2560.-310.2560.1417@0.23.1280.777" timestamp="1643032989112" />
     <state x="305" y="124" width="670" height="676" key="search.everywhere.popup/0.23.1280.777@0.23.1280.777" timestamp="1642959920603" />
   </component>
 </project>

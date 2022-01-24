@@ -34,7 +34,7 @@ class AdvertFormType extends AbstractType
                     return $er->createQueryBuilder('p')
                         ->orderBy('p.title', 'ASC');
                 },
-                'expanded' => true,
+                'expanded' => false,
                 'multiple' => false,
 
             ])
