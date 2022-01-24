@@ -2,8 +2,10 @@
 
 namespace App\Controller;
 
+use App\Data\SearchData;
 use App\Entity\Adverts;
 use App\Entity\Favorites;
+use App\Form\SearchFormType;
 use App\Repository\AdvertsRepository;
 use App\Repository\FavoritesRepository;
 use Doctrine\ORM\EntityManagerInterface;
@@ -30,13 +32,17 @@ class SearchController extends AbstractController
 
     public function adverts(AdvertsRepository $advertsRepository, PaginatorInterface $paginator, Request $request)
     {
-        $adverts = $advertsRepository->findAll();
+        //$adverts = $advertsRepository->findAll();
+        $data = new SearchData();
+        $form = $this->createForm(SearchFormType::class, $data);
+        $form->handleRequest($request);
+        $adverts = $advertsRepository->findSearch($data);
         $adverts = $paginator->paginate(
             $adverts,
             $request->query->getInt('page', 1),
             6
         );
-        return $this->render('pages/adverts.html.twig', ['adverts' => $adverts]);
+        return $this->render('pages/adverts.html.twig', ['adverts' => $adverts,'searchForm'=>$form->createView()]);
     }
 
     /**

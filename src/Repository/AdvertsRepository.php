@@ -2,7 +2,9 @@
 
 namespace App\Repository;
 
+use App\Data\SearchData;
 use App\Entity\Adverts;
+use App\Entity\Product;
 use Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepository;
 use Doctrine\Persistence\ManagerRegistry;
 
@@ -17,6 +19,51 @@ class AdvertsRepository extends ServiceEntityRepository
     public function __construct(ManagerRegistry $registry)
     {
         parent::__construct($registry, Adverts::class);
+        $this->em = $this->getEntityManager();
+    }
+
+
+    public function findSearch(SearchData $search): array
+    {
+
+
+        $query = $this
+            ->createQueryBuilder('a')
+            ->select('a');
+
+        $secondquery = $this->em->createQueryBuilder();
+
+        $brands = [];
+        foreach ($search->brands as $brand) {
+            array_push($brands, $brand->getTitle());
+        }
+
+        $secondquery
+            ->select('p')
+            ->from(Product::class, 'p')
+            ->join('p.brand', 'b')
+            ->where('b.title IN (:brands)')
+            ->setParameter('brands', $brands);
+
+        //dd($search->brands);
+        //dd($secondquery->getQuery()->getResult());
+
+        if (!empty($search->q)) {
+            $query = $query
+                ->andWhere('a.title LIKE :q')
+                ->setParameter('q', "%{$search->q}%");
+        }
+
+        if (!empty($search->brands)) {
+
+            $query = $query
+                ->andWhere('a.product IN (:products)')
+                ->setParameter('products', $secondquery->getQuery()->getResult());
+
+        }
+
+        return $query->getQuery()->getResult();
+
     }
 
     // /**

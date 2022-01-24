@@ -26,130 +26,136 @@
 {% endblock %}
 
 {% block body %}
-    <body>
+<body>
 
-    <header class="header_area">
-        <div class="main_menu">
-            <nav class="navbar navbar-expand-lg navbar-light">
-                <div class="container">
-                    <a class="navbar-brand logo_h" href="{{ path('home') }}"><img src="{{ asset('img/logo.png') }}"
-                                                                                  alt=""></a>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse"
-                            data-target="#navbarSupportedContent"
-                            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <div class="collapse navbar-collapse offset" id="navbarSupportedContent">
-                        <ul class="nav navbar-nav menu_nav ml-auto mr-auto">
-                            <li class="nav-item active"><a class="nav-link" href="{{ path('home') }}">Home</a></li>
-                            <li class="nav-item"><a class="nav-link" href="{{ path('adverts') }}">Annonces</a></li>
-                            <li class="nav-item submenu dropdown">
-                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button"
-                                   aria-haspopup="true"
-                                   aria-expanded="false">Compte</a>
-                                <ul class="dropdown-menu">
-                                    {% if app.user != true %}
-                                    <li class="nav-item"><a class="nav-link" href="{{ path('app_login') }}">Se connecter</a></li>
-                                    <li class="nav-item"><a class="nav-link" href="{{ path('register') }}">S'enregistrer</a></li>
-                                    {% endif %}
+<header class="header_area">
+    <div class="main_menu">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container">
+                <a class="navbar-brand logo_h" href="{{ path('home') }}"><img src="{{ asset('img/logo.png') }}"
+                                                                              alt=""></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                        data-target="#navbarSupportedContent"
+                        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <div class="collapse navbar-collapse offset" id="navbarSupportedContent">
+                    <ul class="nav navbar-nav menu_nav ml-auto mr-auto">
+                        <li class="nav-item active"><a class="nav-link" href="{{ path('home') }}">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="{{ path('adverts') }}">Annonces</a></li>
+                        <li class="nav-item submenu dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button"
+                               aria-haspopup="true"
+                               aria-expanded="false">Compte</a>
+                            <ul class="dropdown-menu">
+                                {% if app.user != true %}
+                                    <li class="nav-item"><a class="nav-link" href="{{ path('app_login') }}">Se
+                                            connecter</a></li>
+                                    <li class="nav-item"><a class="nav-link"
+                                                            href="{{ path('register') }}">S'enregistrer</a></li>
+                                {% else %}
                                     <li class="nav-item"><a class="nav-link" href="{{ path('profile') }}">Profil</a>
                                     </li>
-                                </ul>
-                            </li>
-                            <li class="nav-item"><a class="nav-link" href="{{ path('advert_form') }}">Publier votre annonce</a></li>
-                        </ul>
+                                    <li class="nav-item"><a class="nav-link" href="{{ path('app_logout') }}">logout</a>
+                                    </li>
+                                {% endif %}
+                            </ul>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="{{ path('advert_form') }}">Publier votre
+                                annonce</a></li>
+                    </ul>
 
-                        <ul class="nav-shop">
-                            <li class="nav-item">
-                                <button><i class="ti-search"></i></button>
-                            </li>
-                            <li class="nav-item">
-                                <button><i class="ti-shopping-cart"></i><span class="nav-shop__circle">3</span></button>
-                            </li>
-                            <li class="nav-item"><a class="button button-header" href="#">Buy Now</a></li>
-                        </ul>
+                   <!-- <ul class="nav-shop">
+                        <li class="nav-item">
+                            <button><i class="ti-search"></i></button>
+                        </li>
+                        <li class="nav-item">
+                            <button><i class="ti-shopping-cart"></i><span class="nav-shop__circle">3</span></button>
+                        </li>
+                        <li class="nav-item"><a class="button button-header" href="#">Buy Now</a></li>
+                    </ul> -->
+                </div>
+            </div>
+        </nav>
+    </div>
+</header>
+
+
+{% block content %}
+{% endblock %}
+
+<footer class="footer">
+    <div class="footer-area">
+        <div class="container">
+            <div class="row section_gap">
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="single-footer-widget tp_widgets">
+                        <h4 class="footer_title large_title">À Propos</h4>
+                        <p>
+                            Padeal sera votre partenaire idéal pour l'achat et la vente de vos raquettes de padel.
+                        </p>
+                        <p>
+                            Avec Padeal, fini de commander vos raquettes sur un site Espagnol traduit sur google
+                            trad' !
+                        </p>
                     </div>
                 </div>
-            </nav>
-        </div>
-    </header>
+                <div class="offset-lg-1 col-lg-2 col-md-6 col-sm-6">
 
+                </div>
+                <div class="col-lg-2 col-md-6 col-sm-6">
 
-    {% block content %}
-    {% endblock %}
+                </div>
+                <div class="offset-lg-1 col-lg-3 col-md-6 col-sm-6">
+                    <div class="single-footer-widget tp_widgets">
+                        <h4 class="footer_title">Contact Us</h4>
+                        <div class="ml-40">
+                            <p class="sm-head">
+                                <span class="fa fa-location-arrow"></span>
+                                Quartier Général
+                            </p>
+                            <p>6, rue du Set, Aymatch</p>
 
-    <footer class="footer">
-        <div class="footer-area">
-            <div class="container">
-                <div class="row section_gap">
-                    <div class="col-lg-3 col-md-6 col-sm-6">
-                        <div class="single-footer-widget tp_widgets">
-                            <h4 class="footer_title large_title">À Propos</h4>
-                            <p>
-                                Padeal sera votre partenaire idéal pour l'achat et la vente de vos raquettes de padel.
+                            <p class="sm-head">
+                                <span class="fa fa-phone"></span>
+                                Téléphone
                             </p>
                             <p>
-                                Avec Padeal, fini de commander vos raquettes sur un site Espagnol traduit sur google
-                                trad' !
+                                +32 456 7890 <br>
+                                +32 456 7890
                             </p>
-                        </div>
-                    </div>
-                    <div class="offset-lg-1 col-lg-2 col-md-6 col-sm-6">
 
-                    </div>
-                    <div class="col-lg-2 col-md-6 col-sm-6">
-
-                    </div>
-                    <div class="offset-lg-1 col-lg-3 col-md-6 col-sm-6">
-                        <div class="single-footer-widget tp_widgets">
-                            <h4 class="footer_title">Contact Us</h4>
-                            <div class="ml-40">
-                                <p class="sm-head">
-                                    <span class="fa fa-location-arrow"></span>
-                                    Quartier Général
-                                </p>
-                                <p>6, rue du Set, Aymatch</p>
-
-                                <p class="sm-head">
-                                    <span class="fa fa-phone"></span>
-                                    Téléphone
-                                </p>
-                                <p>
-                                    +32 456 7890 <br>
-                                    +32 456 7890
-                                </p>
-
-                                <p class="sm-head">
-                                    <span class="fa fa-envelope"></span>
-                                    Email
-                                </p>
-                                <p>
-                                    info@padeal.com <br>
-                                    www.padeal.com
-                                </p>
-                            </div>
+                            <p class="sm-head">
+                                <span class="fa fa-envelope"></span>
+                                Email
+                            </p>
+                            <p>
+                                info@padeal.com <br>
+                                www.padeal.com
+                            </p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
 
-        <div class="footer-bottom">
-            <div class="container">
-                <div class="row d-flex">
-                    <p class="col-lg-12 footer-text text-center">
-                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                        Copyright &copy;<script>document.write(new Date().getFullYear());</script>
-                        All rights reserved | This template is made with <i class="fa fa-heart" aria-hidden="true"></i>
-                        by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
-                </div>
+    <div class="footer-bottom">
+        <div class="container">
+            <div class="row d-flex">
+                <p class="col-lg-12 footer-text text-center">
+                    <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                    Copyright &copy;<script>document.write(new Date().getFullYear());</script>
+                    All rights reserved | This template is made with <i class="fa fa-heart" aria-hidden="true"></i>
+                    by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+                    <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
             </div>
         </div>
-    </footer>
+    </div>
+</footer>
 
-    </body>
+</body>
 
 {% endblock %}

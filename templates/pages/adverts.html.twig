@@ -24,72 +24,63 @@
     <section class="section-margin--small mb-5">
         <div class="container">
             <div class="row">
-                <div class="col-xl-3 col-lg-4 col-md-5">
-                    <div class="sidebar-categories">
-                        <!--<div class="head">Categories</div>
-                        <ul class="main-categories">
-                            <li class="common-filter">
-                                <form action="#">
-                                    <ul>
-                                        <li class="filter-list"><input class="pixel-radio" type="radio" id="men"
-                                                                       name="brand"><label
-                                                    for="men">Homme<span> (3600)</span></label></li>
-                                        <li class="filter-list"><input class="pixel-radio" type="radio" id="women"
-                                                                       name="brand"><label
-                                                    for="women">Dame<span> (3600)</span></label></li>
-                                        <li class="filter-list"><input class="pixel-radio" type="radio" id="accessories"
-                                                                       name="brand"><label
-                                                    for="accessories">Junior<span> (3600)</span></label></li>
-                                    </ul>
-                                </form>
-                            </li>
-                        </ul>-->
-                    </div>
-                    <div class="sidebar-filter">
-                        <div class="top-filter-head">Filtre</div>
-                        <div class="common-filter">
-                            <div class="head">Marque</div>
+                {{ form_start(searchForm,{'attr':{'class':'col-xl-3 col-lg-4 col-md-5'}}) }}
+                <div class="sidebar-categories">
+                    <!--<div class="head">Categories</div>
+                    <ul class="main-categories">
+                        <li class="common-filter">
                             <form action="#">
                                 <ul>
-                                    <li class="filter-list"><input class="pixel-radio" type="radio" id="apple"
+                                    <li class="filter-list"><input class="pixel-radio" type="radio" id="men"
                                                                    name="brand"><label
-                                                for="apple">Adidas<span>(29)</span></label></li>
-                                    <li class="filter-list"><input class="pixel-radio" type="radio" id="asus"
+                                                for="men">Homme<span> (3600)</span></label></li>
+                                    <li class="filter-list"><input class="pixel-radio" type="radio" id="women"
                                                                    name="brand"><label
-                                                for="asus">Babolat<span>(29)</span></label></li>
-                                    <li class="filter-list"><input class="pixel-radio" type="radio" id="gionee"
+                                                for="women">Dame<span> (3600)</span></label></li>
+                                    <li class="filter-list"><input class="pixel-radio" type="radio" id="accessories"
                                                                    name="brand"><label
-                                                for="gionee">Head<span>(19)</span></label></li>
-                                    <li class="filter-list"><input class="pixel-radio" type="radio" id="micromax"
-                                                                   name="brand"><label
-                                                for="micromax">Siux<span>(19)</span></label></li>
-                                    <li class="filter-list"><input class="pixel-radio" type="radio" id="samsung"
-                                                                   name="brand"><label
-                                                for="samsung">Starvie<span>(19)</span></label></li>
+                                                for="accessories">Junior<span> (3600)</span></label></li>
                                 </ul>
                             </form>
-                        </div>
-                        <div class="common-filter">
-                            <div class="head"></div>
-                            <form action="#">
-
-                            </form>
-                        </div>
-
-                    </div>
+                        </li>
+                    </ul>-->
                 </div>
-                <div class="col-xl-9 col-lg-8 col-md-7">
-                    <!-- Start Filter Bar -->
+
+                <div class="sidebar-filter">
                     <div class="filter-bar d-flex flex-wrap align-items-center">
                         <div>
                             <div class="input-group filter-bar-search">
-                                <input type="text" placeholder="Rechercher">
-                                <div class="input-group-append">
+                                {{ form_row(searchForm.q) }}
+
+                                <!-- <div class="input-group-append">
                                     <button type="button"><i class="ti-search"></i></button>
-                                </div>
+                                </div> -->
                             </div>
                         </div>
                     </div>
+
+                    <div class="top-filter-head">Filtre</div>
+                    <div class="common-filter">
+                        <div class="head">Marque</div>
+                        <ul>
+                            {% for brand in searchForm.brands %}
+                                <li class="filter-list">
+                                    {{ form_widget(brand,{'attr':{'class':'pixel-radio'}}) }}
+                                    {{ form_label(brand) }}
+                                </li>
+
+                            {% endfor %}
+                        </ul>
+
+                    </div>
+                 <button type="submit" class="button button--active button-contactForm">Filtrer</button>
+                    <!-- classe possible de mon bouton filtrer class="button button--active button-contactForm"-->
+
+                </div>
+                {{ form_end(searchForm) }}
+                <div class="col-xl-9 col-lg-8 col-md-7">
+                    <!-- Start Filter Bar -->
+
                     <!-- End Filter Bar -->
                     <!-- Start Best Seller -->
                     <section class="lattest-product-area pb-40 category-list">
