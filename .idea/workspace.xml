@@ -2,15 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9671c091-6b8d-47ce-83c7-af3c940a8994" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Data/SearchData.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Form/SearchFormType.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/DefaultController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/DefaultController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Controller/SearchController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/SearchController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Repository/AdvertsRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Repository/AdvertsRepository.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/layouts/bootstrap-base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/layouts/bootstrap-base.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/pages/advertForm.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/pages/advertForm.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/pages/adverts.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/pages/adverts.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/pages/product.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/pages/product.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/pages/profile.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/pages/profile.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -275,7 +273,7 @@
       <workItem from="1642863113099" duration="19519000" />
       <workItem from="1642903605525" duration="131000" />
       <workItem from="1642926864048" duration="18808000" />
-      <workItem from="1643025983311" duration="18858000" />
+      <workItem from="1643025983311" duration="24906000" />
     </task>
     <servers />
   </component>
@@ -300,10 +298,10 @@
       <screen x="0" y="23" width="1280" height="777" />
     </state>
     <state width="234" height="457" key="HiddenNamespacesPopup/0.23.1280.777@0.23.1280.777" timestamp="1642754717529" />
-    <state x="384" y="244" key="NewPhpClassDialog" timestamp="1643041242416">
+    <state x="384" y="244" key="NewPhpClassDialog" timestamp="1643061598456">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
-    <state x="384" y="244" key="NewPhpClassDialog/0.23.1280.777/-2560.-310.2560.1417@0.23.1280.777" timestamp="1643041242416" />
+    <state x="384" y="244" key="NewPhpClassDialog/0.23.1280.777/-2560.-310.2560.1417@0.23.1280.777" timestamp="1643061598456" />
     <state x="384" y="244" key="NewPhpClassDialog/0.23.1280.777@0.23.1280.777" timestamp="1642959966671" />
     <state x="461" y="342" key="NewPhpFileDialog" timestamp="1642781040440">
       <screen x="0" y="23" width="1280" height="777" />

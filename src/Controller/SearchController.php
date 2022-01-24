@@ -42,7 +42,7 @@ class SearchController extends AbstractController
             $request->query->getInt('page', 1),
             6
         );
-        return $this->render('pages/adverts.html.twig', ['adverts' => $adverts,'searchForm'=>$form->createView()]);
+        return $this->render('pages/adverts.html.twig', ['adverts' => $adverts, 'searchForm' => $form->createView()]);
     }
 
     /**
@@ -62,17 +62,21 @@ class SearchController extends AbstractController
         if ($form->isSubmitted() && $form->isValid()) {
             $data = $request->request->get('advertId');
             $target = $advertsRepository->findOneBy(['id' => intval($data)]);
-            $target->setBought(true);
-            if (count($target->getFavorites()->getValues()) > 0) {
-                foreach ($target->getFavorites()->getValues() as $fav) {
-                    if ($fav->getAdvert()->getId() === $target->getId() && $fav->getUser()->getId() === $this->getUser()->getId()) {
-                        $this->em->remove($fav);
+            if ($target->getUser()->getEmail() != $this->getUser()->getUserIdentifier()) {
+                $target->setBought(true);
+                if (count($target->getFavorites()->getValues()) > 0) {
+                    foreach ($target->getFavorites()->getValues() as $fav) {
+                        if ($fav->getAdvert()->getId() === $target->getId() && $fav->getUser()->getId() === $this->getUser()->getId()) {
+                            $this->em->remove($fav);
+                        }
                     }
                 }
+                $this->em->persist($target);
+                $this->em->flush();
+                return $this->redirectToRoute('adverts');
+            }else{
+                return $this->redirectToRoute('advert-info',['id'=>$id]);
             }
-            $this->em->persist($target);
-            $this->em->flush();
-            return $this->redirectToRoute('adverts');
 
         }
 

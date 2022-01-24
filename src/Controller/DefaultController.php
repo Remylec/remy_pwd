@@ -9,6 +9,9 @@ use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 use App\Repository\FavoritesRepository;
+use App\Repository\AdvertsRepository;
+
+
 
 
 class DefaultController extends AbstractController
@@ -35,9 +38,13 @@ class DefaultController extends AbstractController
      * @Route("/profile", name="profile")
      */
 
-    public function profile()
+    public function profile(AdvertsRepository $advertsRepository,FavoritesRepository $favoritesRepository)
     {
-        return $this->render('pages/profile.html.twig');
+
+        $userAdverts=$advertsRepository->findBy(['user'=>$this->getUser()]);
+        $userFavorites=$favoritesRepository->findBy(['user'=>$this->getUser()]);
+        return $this->render('pages/profile.html.twig',['adverts'=>$userAdverts,'favorites'=>$userFavorites]);
+
     }
 
 

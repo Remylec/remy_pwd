@@ -27,9 +27,13 @@ class AdvertsRepository extends ServiceEntityRepository
     {
 
 
+
         $query = $this
             ->createQueryBuilder('a')
-            ->select('a');
+            ->select('a')
+            ->where('a.bought=false');
+
+
 
         $secondquery = $this->em->createQueryBuilder();
 
