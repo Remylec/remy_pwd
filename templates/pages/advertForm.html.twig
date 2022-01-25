@@ -31,17 +31,16 @@
                                 <div class="form-group">
                                     {{ form_widget(formAdvert.title,{'attr':{'placeholder':'titre','class':'form-control borderform'}}) }}
                                 </div>
-                                <div class="form-group">
-                                    <label>Liste Raquettes</label>
-                                    {{ form_widget(formAdvert.product,{'attr':{'class':'form-control borderform'}}) }}
+                                <label>Liste Raquettes</label>
+                                <div class="form-group  borderform  table100-body js-pscroll scrollprod">
+                                    {{ form_widget(formAdvert.product,{'attr':{'class':'form-control'}}) }}
+
                                 </div>
                                 <div class="form-group">
                                     {{ form_widget(formAdvert.price,{'attr':{'placeholder':'prix','class':'form-control borderform'}}) }}
                                 </div>
                                 <div class="form-group">
                                     {{ form_widget(formAdvert.imageFile,{'attr':{'class':'form-control'}}) }}
-
-
                                 </div>
                             </div>
                             <div class="col-lg-7">
