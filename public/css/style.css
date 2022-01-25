@@ -4202,7 +4202,7 @@ a {
 }
 @media (min-width: 1000px) {
   .footer-area {
-    padding: 195px 0px 120px;
+    padding: 50px 0px 50px;
   }
 }
 
@@ -4740,6 +4740,11 @@ th, td {
 
 .box-image{
   width: 150px;
+}
+
+.borderform{
+  border: 1px solid #555555!important;
+  border-radius: 5px;
 }
 
 /*# sourceMappingURL=style.css.map */

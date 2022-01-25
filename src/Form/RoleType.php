@@ -17,8 +17,8 @@ class RoleType extends AbstractType
                 function ($originalRoles){
                    return ($originalRoles) ? $originalRoles[0] : null;
                 },
-                function($submmitedRoles){      
-                    return array_filter([$submmitedRoles]);
+                function($submitedRoles){
+                    return array_filter([$submitedRoles]);
                 }
             ))
         ;

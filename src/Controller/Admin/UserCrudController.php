@@ -9,6 +9,7 @@ use EasyCorp\Bundle\EasyAdminBundle\Field\ChoiceField;
 use EasyCorp\Bundle\EasyAdminBundle\Field\EmailField;
 use EasyCorp\Bundle\EasyAdminBundle\Field\IdField;
 use EasyCorp\Bundle\EasyAdminBundle\Field\TextField;
+use Symfony\Component\Form\Extension\Core\Type\PasswordType;
 
 class UserCrudController extends AbstractCrudController
 {
@@ -24,11 +25,11 @@ class UserCrudController extends AbstractCrudController
             IdField::new('id')->hideOnForm(),
             EmailField::new('email','email'),
             TextField::new('pseudo','pseudo'),
-            TextField::new('plainPassword','mot de passe')->hideOnIndex(),
+            TextField::new('plainPassword','mot de passe')->hideOnIndex()->setFormType(PasswordType::class),
             ChoiceField::new('roles','role')
             ->setChoices([
                 'utilisateur'=>'ROLE_USER',
-                'administrateur'=>'ROLE_ADMIN',
+                'administrateur'=>'ROLE_ADMIN'
             ])
             ->allowMultipleChoices(false)
             ->renderExpanded(true)

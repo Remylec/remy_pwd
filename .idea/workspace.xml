@@ -2,11 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9671c091-6b8d-47ce-83c7-af3c940a8994" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Form/RoleType.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/packages/security.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/security.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Controller/Admin/DashboardController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/Admin/DashboardController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Form/RegisterFormType.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Form/RegisterFormType.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/Admin/UserCrudController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/Admin/UserCrudController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Form/RoleType.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Form/RoleType.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Security/AppUserAuthenticator.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Security/AppUserAuthenticator.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/pages/advertForm.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/pages/advertForm.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -270,7 +273,7 @@
       <workItem from="1642863113099" duration="19519000" />
       <workItem from="1642903605525" duration="131000" />
       <workItem from="1642926864048" duration="18808000" />
-      <workItem from="1643025983311" duration="27309000" />
+      <workItem from="1643025983311" duration="30433000" />
     </task>
     <servers />
   </component>
@@ -318,10 +321,10 @@
       <screen x="0" y="23" width="1280" height="777" />
     </state>
     <state x="306" y="168" width="667" height="486" key="find.popup/0.23.1280.777@0.23.1280.777" timestamp="1641296489179" />
-    <state x="305" y="124" width="670" height="676" key="search.everywhere.popup" timestamp="1643032989112">
+    <state x="305" y="124" width="670" height="676" key="search.everywhere.popup" timestamp="1643072417361">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
-    <state x="305" y="124" width="670" height="676" key="search.everywhere.popup/0.23.1280.777/-2560.-310.2560.1417@0.23.1280.777" timestamp="1643032989112" />
+    <state x="305" y="124" width="670" height="676" key="search.everywhere.popup/0.23.1280.777/-2560.-310.2560.1417@0.23.1280.777" timestamp="1643072417361" />
     <state x="305" y="124" width="670" height="676" key="search.everywhere.popup/0.23.1280.777@0.23.1280.777" timestamp="1642959920603" />
   </component>
 </project>
