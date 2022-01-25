@@ -2497,9 +2497,9 @@ a {
   left: 0;
   height: 15px;
   width: 15px;
-  -webkit-transition: all 0.15s ease-out 0s;
+  /*-webkit-transition: all 0.15s ease-out 0s;
   -moz-transition: all 0.15s ease-out 0s;
-  transition: all 0.15s ease-out 0s;
+  transition: all 0.15s ease-out 0s;*/
   background: #fff;
   border: 1px solid #999999;
   color: #fff;
@@ -2516,9 +2516,9 @@ a {
 }
 
 .pixel-radio:checked::after {
-  -webkit-animation: click-wave 0.65s;
+  /*-webkit-animation: click-wave 0.65s;
   -moz-animation: click-wave 0.65s;
-  animation: click-wave 0.65s;
+  animation: click-wave 0.65s;*/
   background: #384aeb;
   content: "";
   display: block;
@@ -2527,7 +2527,7 @@ a {
   border-radius: 50%;
   position: relative;
   z-index: 2;
-  opacity: 0;
+  opacity: 80%;
 }
 
 .pixel-radio {
