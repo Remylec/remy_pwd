@@ -88,8 +88,8 @@
                                 <div class="col-md-6 col-lg-4">
                                     <div class="card text-center card-product">
                                         <div class="card-product__img">
-                                            <img class="card-img" src="{{ vich_uploader_asset(advert,'imageFile') }}"
-                                                 alt="">
+                                            <img class="card-img" src="{{ asset('img/uploads/'~advert.image) }}"
+                                                 alt="imageAdvert">
                                             <ul class="card-product__imgOverlay">
                                                 <a href="{{ path('advert-info',{'id': advert.id}) }}">
                                                     <li>

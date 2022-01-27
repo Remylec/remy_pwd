@@ -35,7 +35,7 @@
                 <div class="col-lg-6">
                     <div>
                         <div class="single-prd-item">
-                            <img class="img-fluid" src="{{ vich_uploader_asset(advert,'imageFile') }}" alt="">
+                            <img class="img-fluid" src="{{ asset('img/uploads/'~advert.image) }}" alt="">
                         </div>
 
                     </div>
@@ -43,14 +43,18 @@
                 <div class="col-lg-5 offset-lg-1">
                     <div class="s_product_text">
                         <h3>{{ advert.title }}</h3>
+                        {% if app.user %}
+
                         <a class="js-fav" href="{{ path('fav',{'id':advert.id}) }}">
-                            {% if app.user and advert.isFavByUser(app.user)== false %}
+                            {% if advert.isFavByUser(app.user)== false %}
                             <i class="far fa-star"></i>
                             {% else %}
                             <i class="fas fa-star"></i>
                             {% endif %}
 
                         </a>
+
+                        {% endif %}
                         <p>{{ advert.description }}</p>
                         <p>{{ advert.product.brand }}</p>
                         <p>{{ advert.product.title }}</p>

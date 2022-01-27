@@ -4,7 +4,7 @@ vich_uploader:
   mappings:
     padeal_images:
         uri_prefix: '%padeal_images%'
-        upload_destination: '%kernel.project_dir%/public%padeal_images%'
+        upload_destination: '%kernel.project_dir%/public/%padeal_images%'
         namer: Vich\UploaderBundle\Naming\SmartUniqueNamer
         delete_on_update: false
         delete_on_remove: false

@@ -46,7 +46,7 @@
                                 <td class="cell100 column2">{{ favorite.advert.price }}</td>
                                 <td class="cell100 column3">
                                     <div class="box-image"><img class="card-img"
-                                                                src="{{ vich_uploader_asset(favorite.advert,'imageFile') }}">
+                                                                src="{{ asset('img/uploads/'~favorite.advert.image) }}">
                                     </div>
                                 </td>
                                 <td class="cell100 column4">
@@ -93,7 +93,7 @@
                                 <td class="cell100 column2">{{ advert.price }}</td>
                                 <td class="cell100 column3">
                                     <div class="box-image">
-                                        <img class="card-img" src="{{ vich_uploader_asset(advert,'imageFile') }}">
+                                        <img class="card-img" src="{{ asset('img/uploads/'~advert.image) }}">
                                     </div>
                                 </td>
                                 <td class="cell100 column4">
